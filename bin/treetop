@@ -1,0 +1,22 @@
+#!/usr/bin/ruby
+
+require 'listen'
+
+trap ('INT') do
+  system('clear')
+  exit
+end
+
+ARGV[0] ||= '.'
+
+system('clear')
+system('tree -h')
+
+listener = Listen.to(ARGV[0]) do |modified, added, removed|
+  system('clear')
+  system('tree -h')
+end
+
+listener.start # not blocking
+
+sleep
