@@ -1,9 +1,9 @@
 Gem::Specification.new do |s|
   s.name        = 'treetop'
-  s.version     = '0.0.0'
+  s.version     = '0.0.1'
   s.date        = '2014-04-07'
-  s.summary     = "Hola!"
-  s.description = "A live directory listing with useful info."
+  s.summary     = "A live directory listing with useful info."
+  s.description = "Uses the Unix utility tree to show you live changes to a directory in real time"
   s.authors     = ["Grayson Chao"]
   s.email       = 'graysonchao@berkeley.edu'
   s.executables = ["treetop"]
